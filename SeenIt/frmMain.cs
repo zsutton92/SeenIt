@@ -50,7 +50,6 @@ namespace SeenIt
                 {
                     dgvFoundMovies.DataSource = lstFoundMovies;
                     dgvFoundMovies.Visible = true;
-
                 }
                 else
                 {
@@ -85,8 +84,9 @@ namespace SeenIt
             }
         }
 
+
         /// <summary>
-        /// Finds movie via data from the Internet.
+        /// Calls the GetMovieByTitle method of the Movie class and returns a Movie object.
         /// </summary>
         /// <param name="strSearchTerm">String containing the search term.</param>
         /// <returns name = "foundMovie">Movie object</returns>
